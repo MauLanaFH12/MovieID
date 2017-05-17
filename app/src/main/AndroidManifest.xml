@@ -14,7 +14,7 @@
 
         <meta-data
             android:name="DATABASE"
-            android:value="movie.db" />
+            android:value="places.db" />
         <meta-data
             android:name="VERSION"
             android:value="1" />
@@ -32,7 +32,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
     <activity
         android:name=".MovieDetail"
         android:label="@string/title_activity_scrolling"
@@ -40,13 +39,8 @@
     <activity
         android:name=".MovieItemListActivity"
         android:label="@string/title_movieitem_list"
-        android:theme="@style/AppTheme.NoActionBar">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+       android:theme="@style/AppTheme.NoActionBar"/>
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
     <activity
         android:name=".MovieItemDetailActivity"
         android:label="@string/title_movieitem_detail"
@@ -56,5 +50,5 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MovieItemListActivity" />
     </activity>
-
+</application>
 </manifest>
