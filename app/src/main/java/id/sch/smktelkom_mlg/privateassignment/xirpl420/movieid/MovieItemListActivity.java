@@ -202,7 +202,7 @@ public class MovieItemListActivity extends AppCompatActivity {
                         arguments.putString("sinopsis", movie.getOverview());
                         arguments.putString("title", movie.getTitle());
                         arguments.putFloat("duration", movie.getVote_average());
-                        arguments.putInt("id", movie.getId());
+                        arguments.putInt("id", movie.getID());
                         MovieDetailFragment fragment = new MovieDetailFragment();
                         fragment.setArguments(arguments);
                         getSupportFragmentManager().beginTransaction()
@@ -217,7 +217,7 @@ public class MovieItemListActivity extends AppCompatActivity {
                         intent.putExtra("sinopsis", movie.getOverview());
                         intent.putExtra("title", movie.getTitle());
                         intent.putExtra("duration", movie.getVote_average());
-                        intent.putExtra("id", movie.getId());
+                        intent.putExtra("id", movie.getID());
 
                         startActivity(intent);
                     }

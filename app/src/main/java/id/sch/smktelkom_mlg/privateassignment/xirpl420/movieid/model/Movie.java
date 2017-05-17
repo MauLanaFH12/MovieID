@@ -1,10 +1,11 @@
 package id.sch.smktelkom_mlg.privateassignment.xirpl420.movieid.model;
-
+import com.orm.SugarRecord;
+import java.io.Serializable;
 /**
  * Created by MaulanaFH on 5/15/2017.
  */
 
-public class Movie {
+public class Movie extends SugarRecord implements Serializable {
 
     public String source;
 
@@ -73,7 +74,7 @@ public class Movie {
         this.genre_ids = genre_ids;
     }
 
-    public int getId() {
+    public int getID() {
         return id;
     }
 

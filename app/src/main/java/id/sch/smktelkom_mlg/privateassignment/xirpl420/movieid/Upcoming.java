@@ -69,7 +69,7 @@ public class Upcoming extends Fragment {
 
     public class FetchMovies extends AsyncTask<String, Void, List<Movie>> {
         final ProgressDialog progressDialog = new ProgressDialog(getActivity());
-        private final String LOG_TAG = MainActivity.FetchMovies.class.getSimpleName();
+        private final String LOG_TAG = Upcoming.FetchMovies.class.getSimpleName();
 
         @Override
         protected void onPreExecute() {
@@ -256,7 +256,7 @@ public class Upcoming extends Fragment {
                     intent.putExtra("sinopsis", movie.getOverview());
                     intent.putExtra("title", movie.getTitle());
                     intent.putExtra("duration", movie.getVote_average());
-                    intent.putExtra("id", movie.getId());
+                    intent.putExtra("id", movie.getID());
 
                     startActivity(intent);
                 }
